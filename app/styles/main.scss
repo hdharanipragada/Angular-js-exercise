@@ -1,0 +1,70 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+$headercolor: #1b1d81;
+$footercolor:#175498;
+$textcolor:#ffffff;
+$navcolor:#e2e2e2;
+.mainnav {
+    background-color: $navcolor;
+    height: 60px;
+    img {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.mainmenu {
+    background-color: $headercolor;
+}
+
+.maincontent {
+    height: calc(100% - 60px);
+    overflow: auto;
+}
+
+.mainfooter {
+    padding: 10px;
+    bottom: 0px;
+    height: 50px;
+    background: $footercolor;
+    color: $textcolor;
+}
+
+.dborad-tab {
+    background-color: $navcolor;
+    border: 1px solid #676767;
+    height: 550px;
+    border-radius: 8px;
+    overflow-y: scroll;
+}
+
+.icon-style {
+    padding: 10px;
+    display: inline-block;
+}
+
+.icon-bar {
+    color: $textcolor;
+}
+
+.mSecondPanel .panel-body,
+.mFourthPanel .panel-body,
+.mSixthPanel .panel-body {
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.sidebar {
+    left: -300em;
+}
+.toggle{
+    margin-top: 250px;
+}
+.slideOut {
+    -webkit-transition: width 1s ease, margin 1s ease;
+    -moz-transition: width 1s ease, margin 1s ease;
+    -o-transition: width 1s ease, margin 1s ease;
+    transition: width 1s ease, margin 1s ease;
+}

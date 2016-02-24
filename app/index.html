@@ -1,0 +1,171 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+</head>
+
+<body ng-app="angularexerciseApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <!--main nav -->
+    <nav class="navbar mainnav">
+        <div class="navbar-header">
+            <img src="http://emailmafia.net/wp-content/uploads/2015/07/thunderbird_logo-only_RGB.png">
+        </div>
+        <div class='icon-style pull-right'> <span class="glyphicon glyphicon-triangle-bottom pull-right"></span>
+            <span class="glyphicon glyphicon-user pull-right"></span>
+        </div>
+        <div class='icon-style pull-right'> <span class="glyphicon glyphicon-triangle-bottom pull-right"></span>
+            <span class='pull-right'> Personal</span></div>
+        <div class='icon-style pull-right'><span class="glyphicon glyphicon-search pull-right"></span></div>
+    </nav>
+    <div class="container-fluid">
+        <div id="wrapper" class="row" ng-controller="toggleCtrl">
+            <div class="sidebar-wrapper" ng-class='class1'>
+                <div class="dborad-tab">
+                    <a class="btn col-xs-12 col-md-6 tab1" role="button">Personal updates</a><a class="btn col-xs-12 col-md-6 tab2" role="button">Public Updates</a>
+                    <div id="appear">
+                        <ul class="nav col-xs-10 col-md-10">
+                            <li>
+                                <div class=" col-xs-12">
+                                    <div class="iheading"></div>
+                                    <hr class="col-xs-12">
+                                    <span class="glyphicon glyphicon-flag"></span>
+                                    <span class="idata pull-right"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class=" col-xs-12">
+                                    <div class="iheading"></div>
+                                    <hr class="col-xs-12">
+                                    <span class="glyphicon glyphicon-flag"></span>
+                                    <span class="idata pull-right"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-xs-12">
+                                    <div class="iheading"></div>
+                                    <hr class="col-xs-12">
+                                    <span class="glyphicon glyphicon-flag"></span>
+                                    <span class="idata pull-right"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class=" col-xs-12">
+                                    <div class="iheading"></div>
+                                    <hr class="col-xs-12">
+                                    <span class="glyphicon glyphicon-flag"></span>
+                                    <span class="idata pull-right"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-xs-12">
+                                    <div class="iheading"></div>
+                                    <hr class="col-xs-12">
+                                    <span class="glyphicon glyphicon-flag"></span>
+                                    <span class="idata pull-right"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class=' col-xs-1 toggle'> <a href="" class="glyphicon glyphicon-chevron-left" id="menu-toggle" ng-click='fnToggleDiv()'></a></span>
+            <div id='page-content-wrapper' ng-class='class2'>
+                <div class=''>
+                    <div class="navbar navbar-default mainmenu" role="navigation">
+                        <div>
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="js-navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#/">Home</a></li>
+                                    <li><a ng-href="#/about">About Us</a></li>
+                                    <li><a ng-href="#/requests">My requests</a></li>
+                                    <li><a ng-href="#/todo">My ToDo</a></li>
+                                    <li><a ng-href="#/rewards">My Rewards</a></li>
+                                    <li><a ng-href="#/events">My Life Events</a></li>
+                                    <li><a ng-href="#/nominations">Nominations</a></li>
+                                    <li><a ng-href="#/profile">My Profile<span class="glyphicon glyphicon-triangle-bottom"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-xs-12 col-md-11 pull-right maincontent">
+                            <div ng-view=""></div>
+                        </div>
+                        <div class="footer col-xs-12 mainfooter">
+                            <div class="col-md-2"><span class="glyphicon glyphicon-comment"></span>Chat with HR</div>
+                            <div class="col-md-2"><span class="glyphicon glyphicon-envelope"></span>Ask a Question
+                            </div>
+                            <div class="col-md-2"><span class="glyphicon glyphicon-refresh"></span>Request Callback
+                            </div>
+                            <div class="col-md-4"><span class="glyphicon glyphicon-earphone"></span>040-440-4554-44</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+    ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/controllers/requests.js"></script>
+    <script src="scripts/controllers/rewards.js"></script>
+    <script src="scripts/controllers/events.js"></script>
+    <script src="scripts/controllers/todo.js"></script>
+    <script src="scripts/controllers/nominations.js"></script>
+    <script src="scripts/controllers/profile.js"></script>
+    <!-- endbuild -->
+</body>
+
+</html>
